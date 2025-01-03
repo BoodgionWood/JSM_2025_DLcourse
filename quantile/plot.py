@@ -15,7 +15,7 @@ def plot(quants, data_train, preds, taus):
         axs[m].set_xlabel(r'$X$', fontdict={'family': 'Times New Roman', 'size': 35})
         axs[m].set_ylabel(r'$Y$', fontdict={'family': 'Times New Roman', 'size': 35})
         axs[m].set_xlim(0, 1)
-        axs[m].set_ylim([-4,8])
+        axs[m].set_ylim([-8,8])
         axs[m].plot(x_test, quants, alpha=0.9,lw=4)
         axs[m].scatter(data_train[:][0].data.numpy(), data_train[:][1].data.numpy(), color = "k", alpha=0.25,label='Data',s=30)
         axs[m].legend(names,loc='upper left',fontsize=35)
