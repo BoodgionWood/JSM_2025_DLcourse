@@ -4,3 +4,7 @@ __pycache__
 *.log
 /intro/mnist_data/
 intro/runs
+.DS_Store
+.idea/
+generative_models/.DS_Store
+MNIST/

@@ -136,7 +136,6 @@ class DQR_NC(torch.nn.Module):
 
 
 class NC_QR(torch.nn.Module):
-    
     def __init__(self, value_layer: list = None, delta_layer:list = None):
         super(NC_QR, self).__init__()
         self.value_layer = value_layer
@@ -174,3 +173,5 @@ class NC_QR(torch.nn.Module):
         nc_quantities = w*probs +b
 
         return nc_quantities
+
+        
